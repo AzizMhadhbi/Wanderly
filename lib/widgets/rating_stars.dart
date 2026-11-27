@@ -4,10 +4,16 @@ import '../theme/app_theme.dart';
 
 /// Compact five-star rating indicator used on cards and detail views.
 class RatingStars extends StatelessWidget {
-  const RatingStars({super.key, required this.rating, this.showValue = true});
+  const RatingStars({
+    super.key,
+    required this.rating,
+    this.showValue = true,
+    this.iconSize = 16,
+  });
 
   final double rating;
   final bool showValue;
+  final double iconSize;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +29,7 @@ class RatingStars extends StatelessWidget {
             Icon(
               i <= rounded ? Icons.star_rounded : Icons.star_border_rounded,
               color: warmCoral,
-              size: 16,
+              size: iconSize,
             ),
           if (showValue) ...[
             const SizedBox(width: 6),

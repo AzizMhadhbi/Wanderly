@@ -90,12 +90,17 @@ class DestinationCard extends StatelessWidget {
                           ),
                     ),
                     const SizedBox(height: 8),
-                    Row(
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 6,
+                      crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
                         CategoryChip(category: destination.category),
-                        const SizedBox(width: 8),
-                        const Spacer(),
-                        RatingStars(rating: destination.rating),
+                        RatingStars(
+                          rating: destination.rating,
+                          showValue: false,
+                          iconSize: 14,
+                        ),
                       ],
                     ),
                   ],
