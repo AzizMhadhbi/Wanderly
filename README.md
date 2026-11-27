@@ -3,6 +3,8 @@
 A personal travel bucket-list application built with Flutter.
 
 - Specification: [`docs/project-specification.md`](docs/project-specification.md)
+- AI Integration Report: [`docs/ai-integration-report.md`](docs/ai-integration-report.md)
+- Screenshots Report: [`docs/screenshots-report.md`](docs/screenshots-report.md)
 - Platform: Flutter 3.x / Dart 3.x (Android + iOS)
 - Theme: Ocean teal + warm coral (Material 3)
 
