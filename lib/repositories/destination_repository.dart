@@ -1,4 +1,6 @@
-import 'package:flutter/foundation.dart';
+// `foundation.dart` also exports a `Category` annotation, so import only the
+// notifier types to avoid an ambiguous name with our domain enum.
+import 'package:flutter/foundation.dart' show ValueListenable, ValueNotifier;
 
 import '../models/category.dart';
 import '../models/destination.dart';

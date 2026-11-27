@@ -59,7 +59,7 @@ class AppTheme {
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         selectedItemColor: scheme.primary,
-        unselectedItemColor: scheme.onSurface.withOpacity(0.6),
+        unselectedItemColor: scheme.onSurface.withValues(alpha: 0.6),
       ),
       visualDensity: VisualDensity.adaptivePlatformDensity,
     );
